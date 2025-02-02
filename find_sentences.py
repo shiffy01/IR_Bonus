@@ -54,7 +54,7 @@ def check_sentence(sentence):
     for word in palestine_words:
         if word.lower() in sentence:
             palestine = True
-    if (palestine and israel) or (not palestine and not israel):
+    if (palestine and israel): #or (not palestine and not israel):
         return True
     return False
 
@@ -90,7 +90,8 @@ for sheet_name, df in sheets.items():
                 "Newspaper": newspaper,
                 "Document Number": document_number,
                 "Sentence Number": sentence_number,
-                "Sentence": title
+                "Sentence": title,
+                "Label By Hand": ""  # Add empty 'Label By Hand' column
             })
             sentence_number = 2
 
@@ -101,7 +102,8 @@ for sheet_name, df in sheets.items():
                     "Newspaper": newspaper,
                     "Document Number": document_number,
                     "Sentence Number": sentence_number,
-                    "Sentence": sentence.strip()
+                    "Sentence": sentence.strip(),
+                    "Label By Hand": ""  # Add empty 'Label By Hand' column
                 })
                 sentence_number += 1
 
