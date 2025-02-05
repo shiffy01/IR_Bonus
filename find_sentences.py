@@ -61,7 +61,7 @@ def check_sentence(sentence):
 
 # Load the original Excel file
 input_file = "posts_first_targil.xlsx"
-output_file = "sentences.xlsx"
+output_file = "sentences_shiffy.xlsx"
 
 # Read all sheets into a dictionary of DataFrames
 sheets = pd.read_excel(input_file, sheet_name=None)
