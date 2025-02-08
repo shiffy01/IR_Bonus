@@ -17,7 +17,7 @@ model.to(device)
 model.eval()
 
 # Load Excel file
-file_path = "filtered_data_partA.xlsx"  # Replace with your actual file path
+file_path = "filtered_data_partA_both.xlsx"  # Replace with your actual file path
 df = pd.read_excel(file_path)
 
 # Ensure required columns exist
@@ -26,18 +26,45 @@ if "Sentence" not in df.columns or "Label By Hand" not in df.columns:
 
 # Filter sentences with labels
 df = df[df["Label By Hand"].notna()]
-texts = df["Sentence"].astype(str).tolist()
-true_labels = df["Label By Hand"].astype(int).tolist()
+
+# Prepare dataset by selecting 35 random sentences per label
+df_sampled = pd.DataFrame()
+
+# For each label, sample 35 sentences
+for label in range(5):
+    label_df = df[df["Label By Hand"] == label]
+    sampled_df = label_df.sample(n=35, random_state=42)  # You can change the random_state for variability
+    df_sampled = pd.concat([df_sampled, sampled_df])
+
+# Shuffle the sampled dataframe
+df_sampled = df_sampled.sample(frac=1, random_state=42).reset_index(drop=True)
+
+# Ensure that we are using only the sampled dataset
+texts = df_sampled["Sentence"].astype(str).tolist()
+true_labels = df_sampled["Label By Hand"].astype(int).tolist()
 
 # Tokenization function
 def predict(text):
     inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=512).to(device)
     with torch.no_grad():
         outputs = model(**inputs)
-    return torch.argmax(outputs.logits, dim=1).cpu().item()
+    logits = outputs.logits
+    # Get the predicted label and the score (probability of the predicted label)
+    predicted_label = torch.argmax(logits, dim=1).cpu().item()
+    score = torch.softmax(logits, dim=1).max().cpu().item()  # Get the max probability
+    return predicted_label, score
 
-# Get predictions
-predictions = [predict(text) for text in texts]
+# Get predictions and scores
+predictions = []
+scores = []
+for text in texts:
+    pred, score = predict(text)
+    predictions.append(pred)
+    scores.append(score)
+
+# Add predictions and scores as new columns in the dataframe
+df_sampled['Prediction'] = predictions
+df_sampled['Score'] = scores
 
 # Compute metrics
 accuracy = accuracy_score(true_labels, predictions)
@@ -56,3 +83,6 @@ plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
 plt.title("Confusion Matrix")
 plt.show()
+
+# Save the sampled dataset with predictions and scores to a new Excel file
+df_sampled.to_excel("filtered_data_sampled_with_predictions_and_scores.xlsx", index=False)
