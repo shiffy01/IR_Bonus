@@ -1,7 +1,8 @@
+#from the big file with all the sentences extracts the sentences that we labled by hand
 import pandas as pd
 
 # Load the Excel file
-file_path = "sentences.xlsx"
+file_path = "sentences_shiffy.xlsx"
 xls = pd.ExcelFile(file_path)
 
 # Dictionary to store label counts
@@ -27,7 +28,7 @@ for sheet_name in xls.sheet_names:
 if filtered_data:
     final_df = pd.concat(filtered_data, ignore_index=True)
     # Save to a new Excel file
-    output_file = "filtered_data_partA.xlsx"
+    output_file = "filtered_data_partA_both.xlsx"
     final_df.to_excel(output_file, index=False)
     print(f"Filtered data saved to {output_file}")
 
