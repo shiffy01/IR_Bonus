@@ -7,7 +7,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import matplotlib.pyplot as plt
 
 # Step 1: Load the dataset
-df = pd.read_excel('BERT_file.xlsx')  # Replace with your actual file path
+df = pd.read_excel('BERT_file.xlsx')
 
 # Step 2: Convert BERT vectors from string to list of floats
 X = np.array([eval(v) for v in df['sbert_embedded']])  # Assuming 'bert_vector' is a string representation of the list
