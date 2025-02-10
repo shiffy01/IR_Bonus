@@ -66,7 +66,7 @@ df.loc[train_indices, 'confidence_scores'] = [max(score) for score in train_conf
 df.loc[test_indices, 'confidence_scores'] = [max(score) for score in test_confidence_scores]
 
 # Step 10: Save the updated DataFrame with predictions and confidence scores to a new Excel file
-df.to_excel('svm_cross_val_sbert.xlsx', index=False)
+df.to_excel('svm_cross_val_sbert1.xlsx', index=False)
 
 # Step 11: Visualize the confidence score distribution for training data
 train_conf_scores = best_model.predict_proba(X_train_scaled)

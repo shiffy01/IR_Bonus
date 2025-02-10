@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0989c621-ba56-4483-b61f-e73ef8dced05" name="Default Changelist" comment="ran majority">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LoR.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sbert_encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sbert_encoding.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extracting.py" beforeDir="false" afterPath="$PROJECT_DIR$/extracting.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/majority.py" beforeDir="false" afterPath="$PROJECT_DIR$/majority.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/predict_partA.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict_partA.py" afterDir="false" />
-    </list>
+    <list default="true" id="0989c621-ba56-4483-b61f-e73ef8dced05" name="Default Changelist" comment="deleted intermidiate file" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1739216368546</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="deleted intermidiate file">
+      <created>1739218979556</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1739218979556</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +157,7 @@
     <MESSAGE value="finished part a" />
     <MESSAGE value="commit" />
     <MESSAGE value="ran majority" />
-    <option name="LAST_COMMIT_MESSAGE" value="ran majority" />
+    <MESSAGE value="deleted intermidiate file" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted intermidiate file" />
   </component>
 </project>
