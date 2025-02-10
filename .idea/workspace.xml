@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0989c621-ba56-4483-b61f-e73ef8dced05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_6_2025_10_44_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_6_2025_10_44_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_11_38_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_11_38_AM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_7_52_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_7_52_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_7_53_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_7_53_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ANN.py" beforeDir="false" afterPath="$PROJECT_DIR$/ANN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BERT_file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_file.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/majority.py" beforeDir="false" afterPath="$PROJECT_DIR$/majority.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merged_file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/merged_file.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/merged_fileSBERT.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/merged_fileSBERT.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mergingANN.py" beforeDir="false" afterPath="$PROJECT_DIR$/mergingANN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/updated_predictions_with_score.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/updated_predictions_with_score.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

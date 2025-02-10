@@ -1,35 +1,9 @@
-# import pandas as pd
-# from collections import Counter
-#
-# # Load the Excel file
-# file_path = "BERT_file.xlsx"  # Replace with your actual file
-# df = pd.read_excel(file_path)
-#
-# # Identify prediction columns
-# prediction_cols = [col for col in df.columns if "prediction" in col.lower()]
-#
-# # Function to calculate majority label
-# def majority_label(row):
-#     counts = Counter(row[prediction_cols])  # Count occurrences of each label
-#     return counts.most_common(1)[0][0]  # Get the most frequent label
-#
-# # Apply function to each row
-# df["Majority_Label"] = df.apply(majority_label, axis=1)
-#
-# # Compare with true label
-# df["Correct_Prediction"] = (df["Majority_Label"] == df["label encoded"]).astype(int)
-#
-# # Calculate accuracy
-# accuracy = df["Correct_Prediction"].mean()
-# print(f"Accuracy: {accuracy:.4f}")
-#
-# # Save the updated DataFrame
-# df.to_excel("updated_predictions.xlsx", index=False, engine="openpyxl")
-#
-# print("File saved as updated_predictions.xlsx")
-
 import pandas as pd
 from collections import Counter
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.metrics import confusion_matrix
+import numpy as np
 
 # Load the Excel file
 file_path = "BERT_file.xlsx"  # Replace with your actual file
@@ -79,8 +53,7 @@ df.to_excel("updated_predictions_with_score.xlsx", index=False, engine="openpyxl
 print("File saved as updated_predictions_with_score.xlsx")
 
 
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 # Plot 1: Accuracy per label
 label_accuracy = df.groupby("label encoded")["Correct_Prediction"].mean()
@@ -103,9 +76,8 @@ plt.xticks(rotation=45)
 plt.show()
 
 
-from sklearn.metrics import confusion_matrix
-import numpy as np
 
+#confusion matrix
 labels = sorted(df["label encoded"].unique())
 cm = confusion_matrix(df["label encoded"], df["Majority_Label"], labels=labels)
 
@@ -116,7 +88,7 @@ plt.ylabel("True Label")
 plt.title("Confusion Matrix")
 plt.show()
 
-
+#average score
 avg_scores_per_label = df.groupby("label encoded")[score_cols].mean()
 
 plt.figure(figsize=(10, 6))
@@ -126,7 +98,7 @@ plt.ylabel("Score")
 plt.title("Distribution of Scores for Each Label")
 plt.show()
 
-
+#corecct count
 plt.figure(figsize=(8, 6))
 sns.histplot(df["Correct_Prediction"], bins=2, kde=False, discrete=True, color="green")
 plt.xticks([0, 1], ["Incorrect", "Correct"])
@@ -135,7 +107,7 @@ plt.ylabel("Count")
 plt.title("Correct vs. Incorrect Predictions")
 plt.show()
 
-
+#score distrobution
 plt.figure(figsize=(10, 6))
 for score_col in score_cols:
     sns.kdeplot(df[score_col], label=score_col, fill=True, alpha=0.3)
