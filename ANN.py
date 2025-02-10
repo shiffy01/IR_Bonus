@@ -11,9 +11,11 @@ import ast
 # Read Excel file
 df = pd.read_excel('BERT_file.xlsx')
 
+
 # Function to convert string BERT vectors to numpy arrays
 def string_to_vector(bert_string):
     return np.array(ast.literal_eval(bert_string))
+
 
 # Convert 'bert_vector' column to numpy arrays
 df['sbert_embedded'] = df['sbert_embedded'].apply(string_to_vector)
@@ -33,7 +35,7 @@ X_train, X_temp, y_train, y_temp, train_indices, temp_indices = train_test_split
     X, y, df['index'], test_size=0.2, random_state=42)
 
 X_val, X_test, y_val, y_test, val_indices, test_indices = train_test_split(
-    X_temp, y_temp, temp_indices, test_size=0.5, random_state=42)  # 10% test, 10% validation
+    X_temp, y_temp, temp_indices, test_size=0.1, random_state=42)  # 10% test, 10% validation
 
 # Define the ANN model
 model = Sequential([
@@ -48,7 +50,7 @@ model = Sequential([
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 
 # Filepath to save the best model
-checkpoint_filepath = 'best_model_bert.h5'
+checkpoint_filepath = 'best_model_sbert.h5'
 
 # Callbacks
 early_stopping = EarlyStopping(monitor='val_accuracy', mode='max', patience=5, restore_best_weights=True)
@@ -81,7 +83,7 @@ df_val = pd.DataFrame({
     'Confidence': val_confidence,
 })
 
-df_val.to_excel('ann_sbert.xlsx', index=False)
+df_val.to_excel('ann_bert.xlsx', index=False)
 
 # Evaluate the best model on the test set
 test_loss, test_accuracy = model.evaluate(X_test, y_test)
