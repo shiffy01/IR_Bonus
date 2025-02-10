@@ -1,4 +1,4 @@
-#from the big file with all the sentences extracts the sentences that we labled by hand
+#from the big file with all the sentences extracts the sentences that we labled by hand -part A
 import pandas as pd
 
 # Load the Excel file

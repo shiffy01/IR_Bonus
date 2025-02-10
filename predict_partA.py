@@ -1,3 +1,4 @@
+#sends each sentence to the model from hw4 to see its results
 import torch
 import pandas as pd
 import numpy as np
@@ -6,7 +7,7 @@ import seaborn as sns
 from transformers import BertTokenizer, BertForSequenceClassification
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 
-# Path to model
+# Path to model from HW4
 model_path = r"C:\Users\rache\Desktop\איחזור מידע\hw4\fine_tuned_bert\content\fine_tuned_bert"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 

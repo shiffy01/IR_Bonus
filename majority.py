@@ -1,12 +1,12 @@
+#after running the 6 models we check the majority between them.
 import pandas as pd
 from collections import Counter
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix
-import numpy as np
 
 # Load the Excel file
-file_path = "BERT_file.xlsx"  # Replace with your actual file
+file_path = "BERT_file.xlsx"
 df = pd.read_excel(file_path)
 
 # Identify prediction and score columns
@@ -53,7 +53,7 @@ df.to_excel("updated_predictions_with_score.xlsx", index=False, engine="openpyxl
 print("File saved as updated_predictions_with_score.xlsx")
 
 
-
+## PLOTINGS ##
 
 # Plot 1: Accuracy per label
 label_accuracy = df.groupby("label encoded")["Correct_Prediction"].mean()

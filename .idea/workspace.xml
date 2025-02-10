@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0989c621-ba56-4483-b61f-e73ef8dced05" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_11_38_AM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_11_38_AM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_7_52_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_7_52_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_7_53_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2_10_2025_7_53_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="0989c621-ba56-4483-b61f-e73ef8dced05" name="Default Changelist" comment="ran majority">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BERT_file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_file.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoR.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoR.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sbert_encoding.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sbert_encoding.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extracting.py" beforeDir="false" afterPath="$PROJECT_DIR$/extracting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/majority.py" beforeDir="false" afterPath="$PROJECT_DIR$/majority.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merged_file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/merged_file.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merged_fileSBERT.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/merged_fileSBERT.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mergingANN.py" beforeDir="false" afterPath="$PROJECT_DIR$/mergingANN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/updated_predictions_with_score.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/updated_predictions_with_score.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predict_partA.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict_partA.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1739050990870</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ran majority">
+      <created>1739216368546</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1739216368546</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +157,7 @@
     <MESSAGE value="combined sentences to sentences shiffy" />
     <MESSAGE value="finished part a" />
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="ran majority" />
+    <option name="LAST_COMMIT_MESSAGE" value="ran majority" />
   </component>
 </project>
