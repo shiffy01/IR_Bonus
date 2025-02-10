@@ -1,0 +1,55 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"f723f094-91e4-4f1d-aa84-69e11755eebb\" name=\"Changes\" comment=\"finished part a\">\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/.gitignore\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/.name\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/IR_Bonus.iml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/BERT_file.xlsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/BERT_file.xlsx\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/LoR.py\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/LoR.py\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2sURdfklgSL5t8iZoQog6GtiltU\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.grazie&quot;\r\n  }\r\n}</component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"f723f094-91e4-4f1d-aa84-69e11755eebb\" name=\"Changes\" comment=\"\" />\r\n      <created>1686149362021</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1686149362021</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"sentances file\">\r\n      <created>1738526044645</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738526044645</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"extracting\">\r\n      <created>1738600563913</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738600563913</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"sentance marking\">\r\n      <created>1738610444900</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738610444900</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"sbert embedding\">\r\n      <created>1738664601096</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738664601096</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"lora\">\r\n      <created>1738703287313</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738703287313</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"lor updated\">\r\n      <created>1738704033143</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738704033143</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"combined sentences to sentences shiffy\">\r\n      <created>1738874823207</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1738874823207</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"finished part a\">\r\n      <created>1739050990870</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1739050990870</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"9\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"sentances file\" />\r\n    <MESSAGE value=\"extracting\" />\r\n    <MESSAGE value=\"sentance marking\" />\r\n    <MESSAGE value=\"sbert embedding\" />\r\n    <MESSAGE value=\"lora\" />\r\n    <MESSAGE value=\"lor updated\" />\r\n    <MESSAGE value=\"combined sentences to sentences shiffy\" />\r\n    <MESSAGE value=\"finished part a\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"finished part a\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision da562d0a3dd41d036b13f9095fd27ae81b18e18f)
++++ b/.idea/workspace.xml	(date 1739209968745)
+@@ -4,17 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="f723f094-91e4-4f1d-aa84-69e11755eebb" name="Changes" comment="finished part a">
+-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/IR_Bonus.iml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/BERT_file.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/BERT_file.xlsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/LoR.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoR.py" afterDir="false" />
+-    </list>
++    <list default="true" id="f723f094-91e4-4f1d-aa84-69e11755eebb" name="Changes" comment="finished part a" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -106,7 +96,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1739050990870</updated>
+     </task>
+-    <option name="localTasksCounter" value="9" />
++    <task id="LOCAL-00009" summary="majority">
++      <created>1739209900087</created>
++      <option name="number" value="00009" />
++      <option name="presentableId" value="LOCAL-00009" />
++      <option name="project" value="LOCAL" />
++      <updated>1739209900087</updated>
++    </task>
++    <option name="localTasksCounter" value="10" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -129,6 +126,7 @@
+     <MESSAGE value="lor updated" />
+     <MESSAGE value="combined sentences to sentences shiffy" />
+     <MESSAGE value="finished part a" />
+-    <option name="LAST_COMMIT_MESSAGE" value="finished part a" />
++    <MESSAGE value="majority" />
++    <option name="LAST_COMMIT_MESSAGE" value="majority" />
+   </component>
+ </project>
+\ No newline at end of file
