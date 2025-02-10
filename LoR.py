@@ -64,7 +64,8 @@
 # # Predict on test data
 # y_pred = model.predict(X_test)
 # y_pred_prob = model.predict_proba(X_test)  # Get probability scores
-#
+#git add .
+
 # # Evaluate the model
 # accuracy = accuracy_score(y_test, y_pred)
 # print(f"Accuracy: {accuracy:.4f}")
