@@ -117,3 +117,52 @@ plt.ylabel("Density")
 plt.title("Score Distribution for All Models")
 plt.legend()
 plt.show()
+
+
+##  plots piecharts per newspaper
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load the Excel file
+file_path = "updated_predictions_with_score.xlsx"
+df = pd.read_excel(file_path)
+
+# Ensure column names match your dataset
+newspapers = df["Newspaper"].unique()
+true_label_col = "label encoded"  # Update if necessary
+predicted_label_col = "Majority_Label"
+
+# Print overall statistics
+print("\n=== Overall Accuracy Statistics ===")
+df["correct"] = df[true_label_col] == df[predicted_label_col]
+overall_accuracy = df["correct"].mean() * 100
+print(f"Overall Accuracy: {overall_accuracy:.2f}%\n")
+
+# Iterate over each newspaper to calculate statistics
+for newspaper in newspapers:
+    sub_df = df[df["Newspaper"] == newspaper]
+    accuracy = (sub_df[true_label_col] == sub_df[predicted_label_col]).mean() * 100
+    print(f"--- Newspaper: {newspaper} ---")
+    print(f"Total Articles: {len(sub_df)}")
+    print(f"Correct Predictions: {sub_df['correct'].sum()} ({accuracy:.2f}%)")
+
+    # Count occurrences of each predicted label
+    label_counts = sub_df[predicted_label_col].value_counts()
+    print("\nPredicted Labels Distribution:")
+    print(label_counts, "\n")
+
+    # Histogram of predicted labels
+    plt.figure(figsize=(6, 4))
+    label_counts.plot(kind="bar", color="lightblue", edgecolor="black")
+    plt.xlabel("Predicted Labels")
+    plt.ylabel("Count")
+    plt.title(f"Predicted Label Distribution - {newspaper}")
+    plt.xticks(rotation=45)
+    plt.show()
+
+    # Pie chart of predicted labels
+    plt.figure(figsize=(5, 5))
+    label_counts.plot(kind="pie", autopct="%1.1f%%", startangle=90, cmap="Paired")
+    plt.title(f"Predicted Label Distribution - {newspaper}")
+    plt.ylabel("")  # Hide y-label for better appearance
+    plt.show()
